@@ -34,13 +34,13 @@ class PinsController < ApplicationController
         render action: 'edit' 
       end
     end
-  end
+  
 
   def destroy
     @pin.destroy
-      redirect_to pins_url 
-    end
+    redirect_to pins_url 
   end
+  
 
   private
     def set_pin
